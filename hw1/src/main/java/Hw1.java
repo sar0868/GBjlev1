@@ -48,6 +48,17 @@ public class Hw1 {
         System.out.println("Привет, " + str + "!");
     }
 
+    static void example8 (int year){
+        if(year % 400 == 0){
+            System.out.println(year + " - високосный год.");
+        } else if (year % 100 == 0){
+            System.out.println(year + " - не високосный год.");
+        } else if(year % 4 == 0){
+            System.out.println(year + " - високосный год.");
+        } else {
+            System.out.println(year + " - не високосный год.");
+        }
+    }
 
     public static void main(String[] args) {
         byte byteValue = 2;
@@ -72,5 +83,6 @@ public class Hw1 {
         System.out.println("6. " + example6(87));
         System.out.println("6. " + example6(-87));
         example7("Алексей");
+        example8(104);
     }
 }
